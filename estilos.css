@@ -1,6 +1,14 @@
+/*
+*****CONFIGURAÇÕES GERAIS*****
+*/
+
 * {
     margin: 0;
     padding: 0;
+}
+
+ul{
+    list-style: none;
 }
 
 body{
@@ -9,12 +17,38 @@ body{
     margin: 15px;
 }
 
-#conteiner{
-    background:#ede933;
+h2{
+    color: #7d7640;
+    font-size: 1.1em;
+    padding: 5px 0px;
+}
+
+p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* 
+*****LAYOUT DA PÁGINA*****
+*/
+
+#conteiner {
     margin: 0 auto;
     min-width: 740px;
     max-width: 1180px;
+    background: url(imagens/bg-container.png) top center repeat-y;
 }
+
+/* 
+***** CONFIGURAÇÕES TOPO*****
+*/
 
 #topo{
     position: relative;
@@ -81,6 +115,92 @@ a.reserva{
     float: right;
 }
 
-a {
-    text-decoration: none;
+#menu{
+    margin-top: 15px;
 }
+
+ul#navegacao{
+    float: left;
+}
+
+ul#navegacao a{
+    font-size: 0.8em;
+    list-style-type: none;
+    color: #6e672c;
+    line-height: 30px;
+    padding: 5px;
+}
+
+ul#navegacao a:hover {
+    background-color: #fdf6be;
+}
+
+.depoimento {
+    width: 226px;
+    height: 164px;
+    float: right;
+}
+
+/*
+*****CONFIGURAÇÕES ÁREA PRINCIPAL*****
+*/
+
+#area-principal{
+    float: left;
+    width: 50%;
+    background: url(imagens/bg-area-principal.png) top left repeat-x;
+    padding: 15px 0px;
+}
+
+.conteudo {
+    margin: 0 auto;
+    width: 90%;
+}
+
+/*
+*****CONFIGURAÇÕES ÁREA LATERAL*****
+*/
+
+#area-lateral {
+    float: right;
+    width: 50%;
+    padding: 20px 0px;
+    background: url(imagens/bg-area-lateral.png) top left repeat-x;
+}
+
+#beneficios li a h3 {
+    color: #615b2d;
+    padding: 5px 0;
+    background: url(imagens/ornamento.png) no-repeat center right;
+    font-size: 16px;
+}
+
+#beneficios li a img {
+    width: 150px;
+    float: left;
+    margin-right: 8px;
+}
+
+#beneficios li a p {
+    color: black;
+    font-size: 0.8em;
+}
+
+#beneficios li {
+    padding: 8px;
+    border-bottom: 1px solid #f3efcb;
+    height: 6em;
+}
+
+
+/*
+*****RODA-PÉ*****
+*/
+
+#rodape{
+    clear: both;
+    padding: 16px;
+    background: #fff url(../imagens/bg-rodape.png) repeat-x top;
+    color: #7d7640;
+}
+
